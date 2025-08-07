@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Like A Coder</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to apply the fonts and theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd; /* Off-white, like paper */
+            color: #1a1a1a;
+        }
+        
+        /* A font that looks like handwriting/marker for headings */
+        .font-marker {
+            font-family: 'Kalam', cursive;
+        }
+
+        /* Simple underline with a marker-like feel */
+        .marker-highlight {
+            background-image: linear-gradient(120deg, #fde047 0%, #fde047 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 35%;
+            background-position: 0 88%;
+            transition: background-size 0.25s ease-in;
+        }
+        .marker-highlight:hover {
+            background-size: 100% 88%;
+        }
+
+        /* Styling for the blockquote to feel like a pasted note */
+        .note {
+            background-color: #fefce8; /* A very light yellow, like a sticky note */
+            border-left: 4px solid #facc15; /* Yellow-400 */
+            transform: rotate(-1deg); /* Slight rotation for a handmade feel */
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="text-center py-12 md:py-20 border-b-2 border-dashed border-gray-300">
+        <h1 class="font-marker text-5xl md:text-7xl font-bold text-gray-800">
+            thinklikeacoder.com
+        </h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-600">A Coder's Manifesto.</p>
+    </header>
+
+    <!-- Main Content: The Manifesto -->
+    <main class="container mx-auto max-w-3xl p-6 md:p-8">
+        
+        <div class="space-y-16 md:space-y-24 my-12">
+
+            <!-- Principle 1: Steal Like a Coder -->
+            <section>
+                <h2 class="font-marker text-3xl md:text-4xl inline marker-highlight">1. Steal Like a Coder.</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    Every new idea is a remix of one or more past ideas. The best coders don't invent from a vacuum. They study, deconstruct, and understand great code—from libraries, frameworks, and open-source projects. Your job is to collect good ideas. The more good ideas you collect, the more you can choose from to influence your own work.
+                </p>
+                <blockquote class="note p-4 mt-6 italic">
+                    <p>"You don't want to look like your heroes, you want to see like your heroes."</p>
+                    <cite class="not-italic font-medium text-gray-600">- Austin Kleon</cite>
+                </blockquote>
+            </section>
+
+            <!-- Principle 2: Start Building -->
+            <section>
+                <h2 class="font-marker text-3xl md:text-4xl inline marker-highlight">2. Don't wait to start building.</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    Don't wait until you "feel ready" or have mastered every concept. The best way to learn is by doing. Start that side project. Build that silly app. Write that first line of code. It's okay to feel like an imposter; most of us do. Make things, learn from them, and you'll find your voice along the way.
+                </p>
+            </section>
+
+            <!-- Principle 3: Build the App You Want to Use -->
+            <section>
+                <h2 class="font-marker text-3xl md:text-4xl inline marker-highlight">3. Build the app you want to use.</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    Is there a tool that would make your life easier? A game you wish existed? Build it. Your own passion and needs are the best starting point for a project. If you create something you genuinely want, you're more likely to see it through. Chances are, other people want it too.
+                </p>
+            </section>
+
+            <!-- Principle 4: Do Good Work & Share It -->
+            <section>
+                <h2 class="font-marker text-3xl md:text-4xl inline marker-highlight">4. Do good work & share it.</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    It's a two-step process. Step one, "do good work," is about focus and craftsmanship. Step two, "share it," is about putting your work out there. Push your code to GitHub. Write a blog post about what you learned. Tweet a screenshot of your progress. Sharing your process attracts a community of people who care about the same things you do.
+                </p>
+                 <blockquote class="note p-4 mt-6 italic">
+                    <p>"Become a documentarian of what you do."</p>
+                     <cite class="not-italic font-medium text-gray-600">- Austin Kleon</cite>
+                </blockquote>
+            </section>
+            
+            <!-- Principle 5: Be a Good Open-Source Citizen -->
+            <section>
+                <h2 class="font-marker text-3xl md:text-4xl inline marker-highlight">5. Be a good citizen.</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    The internet is a small town. Be nice. Praise good work. Credit your sources. Answer questions. Help others. The connections you make by being a positive force in the community are your most valuable asset.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer / Call to Action -->
+    <footer class="text-center py-16 bg-gray-100 mt-20 border-t border-gray-200">
+        <div class="container mx-auto max-w-3xl px-6">
+            <h3 class="font-marker text-4xl">Join the Community</h3>
+            <p class="mt-4 text-lg text-gray-600">This is just the beginning. More things are coming soon. Drop your email to stay in the loop.</p>
+            
+            <!-- Simple Newsletter Form -->
+            <form action="#" method="POST" class="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" name="email" required placeholder="your.email@example.com" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 outline-none transition duration-200">
+                <button type="submit" class="bg-gray-800 text-white font-bold px-6 py-3 rounded-md hover:bg-gray-900 transition duration-200">
+                    Notify Me
+                </button>
+            </form>
+            <p class="text-xs text-gray-500 mt-4">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
